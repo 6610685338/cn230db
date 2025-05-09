@@ -58,7 +58,7 @@ for row in cur.execute(
 ):
     print(f"   → {row[0]}: {row[1]} attack")
 
-print("\n✅ Average base health by primary attribute:")
+print("\n Average base health by primary attribute:")
 for row in cur.execute(
     """
     SELECT primary_attr, ROUND(AVG(base_health), 2) as avg_hp
